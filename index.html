@@ -2,30 +2,43 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>4u – Response Layer</title>
-
+<title>((KNT)) · PREFTCH · reg sys mode</title>
 <style>
-body{background:#000;color:#0f0;font-family:monospace;padding:20px;}
-pre{background:#111;padding:20px;border:1px solid #333;}
-button{background:#111;color:#0f0;border:1px solid #333;padding:8px 16px;}
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:40px; }
+h1 { color:#0ff; }
+.block { background:#111; padding:20px; margin:25px 0; border-left:4px solid #0ff; }
+pre { white-space:pre; }
+a { color:#0ff; text-decoration:none; }
+a:hover { color:#fff; }
 </style>
 </head>
 
 <body>
 
-<h1>4u – Response Layer</h1>
+<h1>((KNT)) · PREFTCH · reg sys mode</h1>
 
-<button onclick="show()">RESPO</button>
+<div class="block">
+<pre>
+MODULE: ((KNT))
+MODE: PREFTCH · reg sys
+SYSTEM: iki1uc
+LAYER: respo
 
-<pre id="out">Bereit...</pre>
+KNT ist die Möglichkeitsebene der neuen Struktur:
+((WAS)) → ((KNT)) → ((WEN))
 
-<script type="module">
-import { respo } from "./respo.js";
+KNT dient als Zwischenzone, bevor WEN (wenn) ausgelöst wird.
+Es bildet die 120°-Achse im iki1uc-System.
+</pre>
+</div>
 
-function show(){
-  out.textContent = JSON.stringify(respo, null, 2);
-}
-</script>
+<div class="block">
+<a href="ID.html">ID · Node öffnen</a>
+</div>
+
+<div class="block">
+<a href="README.md">Dokumentation öffnen</a>
+</div>
 
 </body>
 </html>
